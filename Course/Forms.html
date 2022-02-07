@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" 
+          type="image/x-icon"
+          href="C:\Web-Dev\Images\LOGO.png">
+
+
+    <title>Forms</title>
+  </head>
+  <body>
+
+    
+
+    <!-- Form tag -->
+    <!-- Input tag is used to take input from user and label tag is used to display content using For attribute -->
+    <!-- we use placeholder attribute to display content we want from user in input in light shade manner  -->
+    <!-- type of attribute value are email, text , number , range , time , ...  -->
+    <!-- required attribute (Boolean Value)is used to make that particular thing compulsary like to enter email & password both -->
+    <!-- Value attribute is used to specify default value , 
+      &to set default value unchanged we use attribute disabled -->
+    <form>
+
+      <div>
+        <label for="Email">Email</label> <br>
+        <input type="email" name="email"
+        id="Email"  required  placeholder="abc@example.com">
+      </div>
+
+      <div>
+        <label for="country">Country</label> <br>
+        <input type="country" name="country"
+        id="country" required placeholder="country"
+        value="India" disabled>
+      </div>
+    
+      <div>
+        <label for="password">Password</label> <br>
+        <input type="password" name="password"
+        id="password" required placeholder="password">
+      </div>
+
+      <div>
+        <input type="submit">
+      </div>       
+
+    </form>
+
+     <!-- Radio Buttons -->
+
+     <form>
+      <!-- To get radio button format we use radio as value in type attribute -->
+      <!-- By inputting name attribute we can avoid selecting multiple option at a time -->
+      <!-- for defaulted value we use checked attribute (BOOLEAN value)-->
+
+        <p>Gender</p>
+
+      <input type="radio" name="gender"  value="Male" checked> Male <br>
+      <input type="radio" name="gender"  value="Female"> Female <br>
+      <input type="radio" name="gender"  value="other"> Other <br>
+      <input type="submit">
+
+    </form> 
+
+
+    <form>
+
+      <p>Course Done</p>
+
+      <input type="checkbox" name="course" value="C++"> C++ <br> 
+      <input type="checkbox" name="course" value="Java"> Java <br> 
+      <input type="checkbox" name="course" value="Web-Devlopment"> Web-Devlopment <br> 
+      <input type="Submit">
+    </form>
+
+
+    <!-- Dropdown List -->
+    <!-- For dropdown list we use select tag  -->
+    <!-- to Enter option in dropdown list we use option tag and (entering value is not necessary) -->
+    <!-- To select multiple option in dropdown list we use multiple attribute inside select tag (use ctrl + select)-->
+    <!-- To make a option default one , use selected -->
+    <form>
+
+      <select name="month" multiple>
+
+        <option value="Jan" selected>Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="Sept">Sept</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
+
+      </select>
+
+    </form>
+
+
+    <!-- Here form is used to send data we get from user  -->
+    <!-- Here using action atttribute we can specify by entering url specify address on server to send the form content to  -->
+    <!-- method attribute specifies name that processes the form data -->
+    <!-- We use get  request to request data from server  using get request hte data we submit becomes part of URL-->
+    <!-- If the info is like which we dont want to guard we use get request and in case like passwords we use post request -->
+
+    <form method="get">
+
+      <!-- TextBox -->
+      <!-- TO make text-Box we use tag textarea inside it we have attribute name , cols , rows -->
+
+      <p>Share Your Experience</p>
+
+      <textarea 
+        name="Experience" 
+        cols="30" rows="10">
+      </textarea>
+
+
+
+      <!-- Buttons -->
+      <!-- To make button we use button tag  -->
+      <!-- We use attribute type to select type of button we want (types are submit , button , reset) -->
+      <!-- The main advantage of button tag is that we can add image using img tag , inside button and set its height and width of image -->
+      <br>
+      <button type="button" >Button</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <br>
+      <button type="button">Button1</button>
+
+    </form> 
+
+
+
+    <!-- Media Tags -->
+    <!-- Audio File -->
+    <!-- As browser doesn't recognize all audio format so we use source tag  -->
+    <!-- Inside source tag we use src attribute to enter location of file or
+         file url and with that we use type atribute to specify type of file like mp3, mp4, ogg and ...-->
+    <!-- ontrol attribute is use to show audio playing option menu -->
+
+    <audio  controls>
+
+      <source   src="C:\Web-Dev\AUDIO\Shankara Re Shankara - Tanhaji.mp3" 
+                type = "audio/mp3">  
+      <source   src="C:\Web-Dev\AUDIO\Shankara Re Shankara - Tanhaji.mp3" 
+                type = "audio/ogg">  
+    </audio>
+
+    <br>
+
+    <video height="200" width="200" controls>
+      <source src="C:\Web-Dev\Video\Drawing.mp4"
+              type ="video/mp4">
+              Browser doesen't Support this video format
+    </video>
+
+
+
+    <figure>
+      <img src="C:\Web-Dev\Images\AI roles.png">
+      <figcaption>LOGO IMAGE</figcaption>
+    </figure>
+
+
+
+    <!-- Fevicon -->
+
+
+
+   
+
+
+
+  </body>
+</html>

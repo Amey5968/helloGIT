@@ -1,0 +1,68 @@
+h1{
+    margin-left: 3rem;
+}
+li{
+    /* We applied list style as value  none to remove dots which came from ul tag */
+    list-style: none;
+    /* We applied margin to make content seprate from each other */
+    margin-left: 2rem;
+    margin-right: 1rem;
+    padding-top: 7px;
+    font-size: 1.3rem;
+}
+.navbar>nav{
+    /* We made our content in side by side manner by using dispaly value flex and 
+     to create space between them  we use justify content value space between*/
+     
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    /* shows content in side by side manner */
+    display: flex;
+    margin-bottom: 2rem;
+}
+.welcomeImage>img{
+    height: 90vh;
+    width:  95vw;
+    /* Here margin means we left 2% of space from left and from right */
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.skills{
+    /* TO make block elements to view in side by side manner we use this */
+    display: flex;
+}
+.skills>div{
+    /* We made all content inside div as centre alligned */
+   text-align: center;
+   width: 30vw;
+   /* and left some space from top between all content in div */
+   margin-top: 1rem ;
+   margin-left: 1rem;
+}
+.skills>div>p{
+    padding: 2rem;
+}
+.footer{
+
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.footerp{
+    font-size: 25px;
+    
+}
+a:link , a:visited{
+    color: black;
+}
+a:hover{
+    /* When we move our cursor on link , link changes its colour */
+    color: lightcoral;
+}
+a{
+    /* When we put text inside anchor tag a underline is formed under text
+    to remove that we use this */
+    text-decoration: none;
+}

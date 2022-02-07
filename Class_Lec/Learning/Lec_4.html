@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>CSS Selector</title>
+
+    <style>
+
+         /* Universal Selector */
+         /* Usually we write   Universal Selector  in top */
+         *{
+             background-color: azure;
+         }
+
+        /* Element Selector */
+        /* In this it styles alcontent inside element  */
+        div{
+            color: red;
+            background-color: black;
+        }
+
+        h1{
+            color: aquamarine;
+            background-color: red;
+        }
+
+
+        /* Class Selector */
+        /* It is used to style particular content so that other content remain unchanged */
+        /* to select class we use .and then class name */
+        /* To use classse two times just give space and write another class name */
+        .pinktext{
+
+            color: lightpink ;
+            background-color: lavender;
+        }
+
+        .largetext{
+            font-size: 30px;
+        }
+
+        /* only para 1 has 2 classes so we use both class to make change only in para 1 */
+        .pinktext.largetext{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .para2_color{
+            color: teal;
+        }
+
+        /* ID Selector  */
+        
+
+        #unique{
+            color: deeppink;
+        }
+
+
+        /* Grouping Selector */
+
+        /* h1{
+            color: lightgreen;
+        }
+
+        p{
+            color: lightgreen;
+        }
+        h3{
+            color: lightgreen;
+        } */
+
+        h1 , p , h3{
+            color: lightgreen;
+        }
+        h3{
+            font-size: 50px;
+        }
+
+
+        /* Descendant Selector */
+        div p span{
+            color: darkcyan;
+        }
+
+        /* Chidren Selector */
+        div>p>span {
+            color: lightsalmon;
+        }
+
+        th , td{
+            border: 2px solid lightpink
+        }
+
+        table{
+            border-color: lightpink;
+        
+        }
+        
+       
+       
+
+
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+  
+    <table border="10">
+        <caption>Animals Table</caption>
+
+        <tr>
+            <th colspan="2">  Animals  </th>
+        </tr>
+
+        <tr>
+            <th colspan="2"> Hippopotamus </th>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Horse</th>
+            <th>Horse-1</th>
+        </tr>
+
+        <tr>
+            <th>Horse-2</th>
+        </tr>
+
+        <tr>
+            <th> Crocodile </th>
+            <th> aligator</th>
+        </tr>
+
+        <tr>
+            <th colspan="2"> Lion </th>
+        </tr>
+
+    </table>
+
+
+    <!-- CSS Selector  -->
+    <!-- Types : 1)Simple (5-types) : 
+                 1.Element , 2.Class , 3.Id , 4.Universal, 5.Grooping
+
+                 2)Combinator (4-types) : 1.Descendant Selector 2.Children Selector 
+                                          3.adjescent-sibling selector 4.General-sibling Selector
+
+                 3)Attribute(1-types) : -->
+
+
+
+<!-- 1.Simple Selector -->
+<!-- Element Selector -->
+<div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+        nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+         pariatur repellendus.
+   </p>
+
+  
+   
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+       nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+        pariatur repellendus.
+  </p>
+
+</div>
+
+    
+<!-- Class Selector -->
+ 
+    <h1>Class Selector</h1>
+   
+   <p class="pinktext largetext ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+    nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+     pariatur repellendus.
+    </p>
+
+
+    <p class="largetext para2_color">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+       nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+       pariatur repellendus.
+    </p>
+
+    <p class="pinktext">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+        nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+        pariatur repellendus.
+    </p>
+
+
+    <!-- id Selector -->
+     <!-- We cant use same id in other tag   -->
+    <!-- We use id selector to uniquely identify element means if we cant use same id in other tag or other p tag also  -->
+    <p class="pinktext largetext "  id="unique">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+        nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+         pariatur repellendus.
+        </p>
+    
+    
+        <p class="largetext para2_color">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+           nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+           pariatur repellendus.
+        </p>
+    
+        <p class="pinktext">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laborum cumque alias in quisquam aliquid et quasi esse aperiam, vero, 
+            nam dolorum, mollitia adipisci inventore deleniti optio sint consectetur
+            pariatur repellendus.
+        </p>
+
+        <!-- Universal Selector -->
+        <!--  It applies style to complete html page-->
+
+        
+        <!-- Grouping Selector -->
+        <h1>Hello Everyone</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Amet similique, neque enim nam iure nobis ipsam provident 
+            vel sit hic necessitatibus recusandae ducimus eos rerum voluptatem 
+            voluptate temporibus laboriosam nostrum sequi eligendi ipsa! Sed nisi 
+            itaque atque at ullam odit unde ipsa dolorum perspiciatis minima 
+            consequatur assumenda veniam mollitia facere consequuntur ipsum maxime 
+            dolor rem, sint, earum velit ad. Porro dolorem reprehenderit aspernatur
+             esse aut sunt nostrum neque odit quia repudiandae cumque, et veritatis maxime autem doloribus, 
+             culpa rem id hic. Natus cum voluptatibus quos accusamus. Consequatur, quas! Libero temporibus quia 
+             aliquam recusandae! Fuga nobis necessitatibus suscipit similique ipsam, quam voluptatem 
+             architecto esse amet nulla provident corporis non! Minima vel,
+              magni nostrum quasi veritatis saepe a. Necessitatibus consequuntur facere, fugiat, quis eos exercitationem
+               magni cum facilis odio eaque mollitia recusandae aut inventore ipsum modi. Vel, id. Culpa veniam reiciendis r
+               eprehenderit aspernatur, dolores eos corrupti saepe vero architecto natus aut ullam!</p>
+        
+        <h3>Its H3</h3>
+
+
+
+        <!-- 2. Combinator selector -->
+            <!-- Mostly used while website automation and web-scraping -->
+        <!-- Descendant Selector and Children Selector -->
+        <div>
+            <p>    
+                <span>This is Children selector</span>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <span>
+                    <p>This is Descendant selector</p>
+                </span>
+            </p>
+        </div>
+
+
+        <!-- 3.Attribute Selector -->
+
+
+
+    
+</body>
+</html>

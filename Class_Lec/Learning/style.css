@@ -1,0 +1,21 @@
+h3{
+    background-color: rgb(255, 0, 0);
+}
+li{
+    font-size: 50px;
+    color: lightseagreen;
+}
+table{
+    color: silver;
+}
+h1{
+    color: tomato;
+    background-color: white;
+   
+}
+
+
+/* If we style same content using inline external and internal style first it reads external then internal and then inline 
+so final style will be applied is inline  */
+/* inline > internal > external 
+but using external type comes in best practices */

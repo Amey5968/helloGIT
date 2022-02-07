@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- To link external css file we use link tAG inside head section  -->
+  <!-- rel tells us whats relation betn our html file and href file which we will give
+   the relation is that style.css is stylesheet of our html file LEc_3 
+    means style.css(inside href) is for styling(stylesheet) of out html file Lec_3-->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Types of tyling in css
+  inline css
+  internal css (inside head tag)
+  external css -->
+  
+
+
+  <!-- This concept is called Internal CSS styling  we can avoid repeatetive work by using this it selects all part 
+  we gave to it like if we want to style all para then we select p and enter color , size and etc.. we want to change -->
+  <!-- It works from top to bottom manner ,  change made later will be final which is inline way  -->
+  
+  <style>
+
+    body{
+      background-color: black;
+      color: aliceblue;
+
+    }
+
+    p{
+      color: rgba(62, 202, 202, 0.39);
+    }
+
+    h1{
+      color: rgb(139, 28, 243);
+      font-size: 55px;
+    }
+
+
+  </style>
+</head>
+<h3>Tables</h3>
+<h1>Table</h1>
+
+
+<body>
+  <!-- Table Tag -->
+  <!-- th (table heading tag) this tag is use in case of table heading like name,age,...instead of td tag-->
+  <!-- td tag(table data tag , this tag is used to insert data ) -->
+  <!-- If we start placing data is td tag it will place all data side by side wise -->
+  <table border="4">
+
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+
+    <tr>
+      <td>Abc</td>
+      <td>20</td>
+    </tr>
+
+    <tr>
+      <td>Def</td>
+      <td>21</td>
+    </tr>
+
+    <tr>
+      <td>Xyz</td>
+      <td>22</td>
+    </tr>
+
+  </table>
+
+
+  <table border="10">
+
+    <th>Name</th>
+    <th>Roll No</th>
+    <th>Branch</th>
+    <th>Percentage</th>
+
+    <tr>
+      <td>Aman</td>
+      <td>1</td>
+      <td>CSe</td>
+      <td>90</td>
+    </tr>
+
+    <tr>
+      <td>Manoj</td>
+      <td>2</td>
+      <td>It</td>
+      <td>91</td>
+    </tr>
+
+    <tr>
+      <td>Advait</td>
+      <td>3</td>
+      <td>CE</td>
+      <td>92</td>
+    </tr>
+  </table>
+
+
+  <table border="8">
+  <caption>College Timetable</caption>
+    <th></th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+
+
+    <tr>
+      <th>Mon</th>
+      <td>Math</td>
+      <td>Sci</td>
+      <td>Eng</td>
+      <td>Hin</td>
+    </tr>
+    <tr>
+      <th>Tue</th>
+      <td>Math</td>
+      <td>Sci</td>
+      <td>Eng</td>
+      <td>Hin</td>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <td>Math</td>
+      <td>Sci</td>
+      <td>Eng</td>
+      <td>Hin</td>
+    </tr>
+  </table>
+<!-- style attribute -->
+<!-- Strong Tag -->
+<!-- em tag -->
+<!-- makes content in bold format inside this tag  -->
+<p style=" color: aqua; font-size: 30px;" > Lorem ipsum dolor, <strong>sit</strong> amet consectetur
+adipisicing elit. Nostrum accusantium provident
+ad reprehenderit <em>cum optio nam assumenda</em> architecto,
+ullam dicta doloribus nemo nihil recusandae ipsam?
+Aperiam unde explicabo quas ratione! </p>
+
+
+<!-- TO style any cntent we use style tag and color attribute and its value -->
+<!-- to style specific part of content we use "span tag" -->
+
+<p style="color: aquamarine; font-size: 30px; ">Lorem ipsum dolor, sit amet consectetur
+  adipisicing elit. Nostrum accusantium provident
+  ad reprehenderit cum optio nam assumenda architecto,
+  ullam dicta doloribus nemo nihil recusandae ipsam?
+  Aperiam unde explicabo quas ratione!</p>
+
+  <!-- it gives so many option like gill sans calibri and .. as if browser dont have this type of font then it requset for other font till last until its available -->
+  <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: darkred; ">Lorem ipsum dolor, sit amet consectetur
+    adipisicing elit. Nostrum accusantium provident
+    ad reprehenderit cum optio nam assumenda architecto,
+    ullam dicta doloribus nemo nihil recusandae ipsam?
+    Aperiam unde explicabo quas ratione!</p>
+    
+    <p style="background-color: rgb(230, 230, 55); color: gold;">Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Nostrum accusantium provident
+      ad reprehenderit cum optio nam assumenda architecto,
+      ullam dicta doloribus nemo nihil recusandae ipsam?
+      Aperiam unde explicabo quas ratione!</p>
+
+
+      <p style="background-color: chartreuse; font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Nostrum accusantium provident
+        ad reprehenderit cum optio nam assumenda architecto,
+        ullam dicta doloribus nemo nihil recusandae ipsam?
+        Aperiam unde explicabo quas ratione!</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Nostrum accusantium provident
+        ad reprehenderit cum optio nam assumenda architecto,
+        ullam dicta doloribus nemo nihil recusandae ipsam?
+        Aperiam unde explicabo quas ratione!</p>
+        
+        <p > Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Nostrum accusantium provident
+          ad reprehenderit cum optio nam assumenda architecto,
+          ullam dicta doloribus nemo nihil recusandae ipsam?
+          Aperiam unde explicabo quas ratione!</p>
+
+          <p>Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Nostrum accusantium provident
+            ad reprehenderit cum optio nam assumenda architecto,
+            ullam dicta doloribus nemo nihil recusandae ipsam?
+            Aperiam unde explicabo quas ratione!</p>
+
+</body>
+
+
+
+<ol>
+  <li>hi there</li>
+  <li>hi there</li>
+  <li>hi there</li>
+  <li>hi there</li>
+</ol>
+
+</html>

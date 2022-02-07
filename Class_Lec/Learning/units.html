@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            font-size: 30px;
+        }
+        .parent{
+            font-size: 35px;
+        }
+        .box{
+            background-color: aquamarine;
+            margin: 10px;
+        }
+        .px{
+            width: 200px;
+        }
+        .vw{
+            width: 10vw;
+        }
+        .em{
+            width: 10em;
+        }
+        .ems{
+            font-size: 1.5em;
+        }
+        .rems{
+            font-size: 1.5rem;
+        }
+        
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+
+    <div class="main">
+
+        <!-- for each we gave them 2 classes  -->
+        <div class="box px"> its 700px wide </div>
+        <div class="box vw"> its 10vw wide </div>
+        <div class="box em">  its 10vw wide </div>
+
+        <!-- div which we enclosed inside other both have child - parent relation with each other
+        first one is parent and enclosed one is child -->
+        <div class="parent">
+            <div>its 35px wide</div>
+        </div>
+
+    </div>
+
+   
+    <!-- diffrence between rem and em -->
+    
+    <!-- rem -->
+    <!-- In rem font size depends on root element which is of 16px , so 16 * 1.5 (line no 32)  = 24 -->
+    
+    <ul class="rems">
+        <li>one</li>
+        <li>two</li>
+        <li>three
+            <ul>
+                <li>three a</li>
+                <li>Three b</li>
+                    <ul>
+                        <li>Three b</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    
+    <!-- em -->
+    <!-- Font size depends upon parent font( in which it is enclosed ) size -->
+    <ul class="ems">
+        <!-- here size is 16px * 1.5 = 24 -->
+        <li>one</li>
+        <li>two</li>
+        <li>three
+            <ul>
+                <!-- size will change due to change in parent font size
+                     24 * 1.5 = 36px -->
+                <li>Three a</li>
+                <li>Three b
+                    <ul>
+                        <li>Three b 1st</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+   
+       
+</body>
+
+</html>

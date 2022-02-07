@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox </title>
+    <style>
+
+        .main>div{
+
+            width: 200px;
+            background-color:yellowgreen ;
+            padding: 10px;
+            margin: 20px;
+
+        }
+        .main{
+
+            display: flex;
+            /* By default value is row */
+            flex-direction: row;
+            /* default value is no-wrap */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<!-- as we inserted so much content in single line so each box
+lenght get smnaller to avoid this and to allow boxes to go in
+next row avoiding shortning of length we use flex-wrap : wrap -->
+<div class="main">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+    <div>Six</div>
+    <div>Seven</div>
+    <div>Eight</div>
+    <div>Nine</div>
+    <div>Ten</div>
+</div>
+
+
+
+<body>
+
+
+    
+</body>
+</html>
