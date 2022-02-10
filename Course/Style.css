@@ -1,6 +1,15 @@
-h1{
+*{
+    font-family: cursive;
+}
+h2{
     color: rgb(130, 11, 241);
 }
 h3{
-    color: rgb(130, 11, 241);
+
+    color: rgb(62, 73, 122);
+    background-color: rgb(241, 208, 10);
+}
+/* To apply upper case to our text  */
+.Uppercase{ 
+    text-transform: uppercase;
 }

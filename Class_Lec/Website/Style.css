@@ -1,3 +1,6 @@
+*{
+    font-family: cursive;
+}
 h1{
     margin-left: 3rem;
 }
@@ -44,10 +47,19 @@ ul{
 .skills>div>p{
     padding: 2rem;
 }
+.logo_header{
+    color: rgb(4, 21, 98)
+}
+.logo_text{
+    color: rgb(17, 70, 143)
+}
+span{
+    color: rgb(218, 18, 18);
+}
 .footer{
 
-    background-color: red;
-    color: white;
+    background-color: rgb(40, 51, 99);
+    color: rgb(240, 240, 240);
     text-align: center;
 }
 .footerp{
