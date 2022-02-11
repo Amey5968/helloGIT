@@ -1,0 +1,57 @@
+.one{
+    background-color:rgb(33, 50, 94);
+    height: 10vh;
+    width: 100vw;
+}
+.two{
+    background-color:rgb(62, 73, 122);
+    height: 10vh;
+    width: 100vw;
+}
+.three{
+    background-color:rgb(241, 208, 10);
+    height: 10vh;
+    width: 100vw;
+}
+.four{
+    background-color:rgb(240, 240, 240);
+    height: 10vh;
+    width: 100vw;
+}
+#outerdiv{
+    height: 20vh;
+    width: 20vw;
+    background-color:rgb(255, 242, 249) ;
+    border-width: 10px 15px ;
+    border-color: indianred;
+    border-style: solid;
+}
+#innerdiv{
+    height: 10vh;
+    width: 10vw;
+    background-color: rgb(254, 131, 198);
+}
+#innerdiv2{
+    height: 5vh;
+    width: 5vw;
+    background-color:rgb(250, 78, 171) ;
+}
+
+/*  
+    1 rem = root element (html)
+    if root element = 20px;
+    then 1 rem = 20px;
+    then 10 rem = 200px;
+
+    we can change size of root element : (in CSS) 
+
+    html{
+        font-size = -- px;
+    }
+
+*/
+
+#sample-text{
+    border-left: 4px  solid red;
+}
+
