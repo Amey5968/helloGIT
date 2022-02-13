@@ -48,3 +48,7 @@ let Arr2d = [
 
 // Accessing element;
 console.log(Arr2d[1][2]);
+
+// Concept of Chaining;
+let res = Arr2d[1];  // Accessed row;
+console.log(res[1]); // Accessed col;
