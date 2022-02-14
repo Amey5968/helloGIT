@@ -53,5 +53,13 @@
 
 #sample-text{
     border-left: 4px  solid red;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight:900 ; 
+    /* value is from 100 to 900 */
+
+}
+.para1{
+    text-align: center ;
 }
 
