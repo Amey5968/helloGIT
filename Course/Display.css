@@ -1,0 +1,18 @@
+div{
+    background-color: lavenderblush;
+    height: 30vh;
+    width: 30vw;
+    /* display: inline;
+    if we do this all div (in box format) will get disappeared,
+     as in inline prop we cant set height and width  as their ht and wt will get 0;*/
+
+    /* So instead we can use  */
+    display: inline-block;
+    /* There will be a small space betn them due to inline prop ( word space ); */
+
+
+}
+span{
+    display: block;
+    /* using this property we can change proerty of an element(inline or block) */
+}
