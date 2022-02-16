@@ -25,18 +25,22 @@
     border-width: 10px 15px ;
     border-color: indianred;
     border-style: solid;
+    margin: auto;
 }
 #innerdiv{
     height: 10vh;
     width: 10vw;
     background-color: rgb(254, 131, 198);
+    margin: auto;
+    margin-top: 30px;
+    
 }
 #innerdiv2{
     height: 5vh;
     width: 5vw;
     background-color:rgb(250, 78, 171) ;
+    margin: auto;
 }
-
 /*  
     1 rem = root element (html)
     if root element = 20px;
@@ -52,14 +56,27 @@
 */
 
 #sample-text{
-    border-left: 4px  solid red;
+    border-left: 7px  solid red;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-decoration: double underline;
     font-weight:900 ; 
     /* value is from 100 to 900 */
-
 }
 .para1{
     text-align: center ;
+}
+.box1{
+    background-color: coral;
+    height: 20vh;
+    width: 20vw;
+    margin-left: 145px;
+    margin-top: 50px;
+}
+.box2{
+    background-color: cornflowerblue;
+    height: 20vh;
+    width: 20vw;
+    margin: auto;
+    /* auto value will place it to centre of page */
 }
 

@@ -1,0 +1,19 @@
+#Background-img{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(IMAGES/logo.png);
+    /* Image will Repeat for given Height and Width  */
+
+    background-repeat: no-repeat;
+    /* To stop image from repeating we use this */
+    /* or to repeat in particular x or y cordinate we can set value as that; */
+
+    background-position: center;
+    /* TO set position of image  */
+
+    background-size: contain ;
+    /* To set dimension of Image */
+
+    background-attachment: fixed;
+    /* Scrolling Effects */
+}
