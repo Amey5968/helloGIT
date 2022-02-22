@@ -1,0 +1,31 @@
+#outerdiv{
+    border: 4px dotted rgb(89, 135, 221);
+    position: relative;
+}
+#div1{
+    background-color: red;
+    height: 10vh;
+    width: 10vw;
+}
+#div2{
+    background-color: darkblue;
+    height: 10vh;
+    width: 10vw;
+    /* For absolute prop no special space is reserved or allocated like relative */
+    position : absolute;
+    top: 5vh;
+    left: 5vw;
+}
+#div3{
+    background-color: cornflowerblue;
+    height: 10vh;
+    width: 10vw;
+    position : sticky; 
+    /* behaves like fixed but only inside container */
+}
+#div4{
+    background-color: rgb(229, 243, 243);
+    height: 10vh;
+    width: 10vw;
+    position : fixed;
+}

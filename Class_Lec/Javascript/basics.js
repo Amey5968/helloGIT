@@ -120,5 +120,10 @@ let multiply = (function multi(a , b){
 console.log(multiply);
 
 
+console.log("5" - 1);
+console.log("ten" * 3);
+
+
+
 
 

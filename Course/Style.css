@@ -21,3 +21,45 @@ h4>a:hover{
 .Image2{
     border-radius: 20%;
 }
+
+
+/* Main */
+main{
+    width: 70%;  
+    display: inline-block; 
+    /* so that aside section can come in side by side manner */
+
+}
+
+
+
+/* Aside  */
+aside{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+.widget{
+    border-top: 5px solid black;
+}
+.widget input{
+    display: block;
+    background-color: #F7F7F7;
+    margin-bottom: 15px;
+    padding: 4px;
+    color: cornflowerblue;
+    font-size: 1rem;
+}
+/* we have selected all buttons having type value submit */
+button[type = "submit"]{
+    font-size: 1rem;
+    background-color: cornflowerblue;
+    color: beige;
+    padding: 5px;
+    margin-left: 45px;
+    border-radius: 10%;
+}
+.widget-title{
+    font-size: 1.5rem;
+    color: cornflowerblue;
+}
