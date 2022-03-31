@@ -21,6 +21,7 @@ fs.appendFileSync("one.txt" , "How are u");
 
 
 
+
 // making directory;
 
 // making folder(directory);

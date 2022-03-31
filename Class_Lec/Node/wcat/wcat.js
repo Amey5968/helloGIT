@@ -3,6 +3,8 @@
 // 3) node wcat.js -n filepath1 filepath2 filepath3 or file1;
 //node wcat.js f1.txt
 //node wcat.js f1.txt f2.txt f3.txt
+// We cant take input in Js but with help of node-Js we can take input using process.argv;
+
 const fs = require("fs");
 let inputArr = process.argv.slice(2);
 // console.log(input);
@@ -19,7 +21,7 @@ for (let i = 0; i < filesArr.length; i++){
     let doesExist = fs.existsSync(filesArr[i]);
     if (!doesExist) {
         console.log("Files does not exist ");
-        return;
+        // return;
     }
 }
 

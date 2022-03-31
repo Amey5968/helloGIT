@@ -1,11 +1,4 @@
-a = "Hello"; // Re-initialize of variable a;
-// console.log(a);
-// console.log(typeof a);
-
-// a = true;
-// console.log(a);
-// console.log(typeof a);
-
-// a = null;
-// console.log(a);
-// console.log(typeof a);
+console.log(x);
+// console.log(b);
+// var x = 10;
+// let b = 100;
